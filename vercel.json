@@ -1,6 +1,7 @@
 {
   "functions": {
     "src/api/main.py": {
+      "runtime": "@vercel/python",
       "excludeFiles": "{.next,.git,node_modules}/**"
     }
   },
