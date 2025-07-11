@@ -1,21 +1,26 @@
 {
-  "functions": {
-    "src/api/main.py": {
-      "runtime": "@vercel/python"
+  "builds": [
+    {
+      "src": "src/api/main.py",
+      "use": "@vercel/python"
     }
-  },
-  "rewrites": [
+  ],
+  "routes": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/main.py"
+      "src": "/api/(.*)",
+      "dest": "src/api/main.py"
     },
     {
-      "source": "/docs",
-      "destination": "/api/main.py"
+      "src": "/docs",
+      "dest": "src/api/main.py"
     },
     {
-      "source": "/openapi.json",
-      "destination": "/api/main.py"
+      "src": "/openapi.json",
+      "dest": "src/api/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "$1"
     }
   ]
 }
