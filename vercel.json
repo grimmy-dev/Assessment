@@ -4,12 +4,28 @@
     {
       "src": "src/api/main.py",
       "use": "@vercel/python"
+    },
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/(.*)",
       "dest": "src/api/main.py"
+    },
+    {
+      "src": "/docs",
+      "dest": "src/api/main.py"
+    },
+    {
+      "src": "/openapi.json",
+      "dest": "src/api/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
