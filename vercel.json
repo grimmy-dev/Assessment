@@ -12,6 +12,9 @@
       "dest": "src/api/main.py"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
       "dest": "/"
     }
