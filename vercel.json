@@ -17,10 +17,6 @@
     {
       "src": "/openapi.json",
       "dest": "src/api/main.py"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "$1"
     }
   ]
 }
