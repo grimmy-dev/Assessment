@@ -1,13 +1,11 @@
 "use client";
 
-import { TrendingUp } from "lucide-react";
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -58,7 +56,7 @@ export function SecurityChart() {
               tickMargin={12}
               tickFormatter={(value) => value.slice(0, 3)}
             />
-            <YAxis dataKey="totalIncidents" tickCount={3}/>
+            <YAxis dataKey="totalIncidents" tickCount={3} />
             <ChartTooltip
               cursor={false}
               content={<ChartTooltipContent hideLabel />}

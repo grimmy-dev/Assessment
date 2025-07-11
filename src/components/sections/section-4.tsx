@@ -5,7 +5,7 @@ import RevenueChart from "../charts/revenue-chart";
 
 const Section4 = () => {
   return (
-    <div className="md:col-span-3 w-full h-full space-y-2">
+    <div className="md:col-span-3 w-full h-full  ">
       <Title className="text-4xl">
         Wayne Enterprises Sustains Strong Revenue Growth
       </Title>

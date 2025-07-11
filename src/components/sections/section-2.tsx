@@ -5,7 +5,7 @@ import RDRevenueChart from "../charts/rd-vs-revenue";
 
 const Section2 = () => {
   return (
-    <div className="md:col-span-2 space-y-2">
+    <div className="md:col-span-2">
       <Title className="text-3xl">R&D Investment Pays Off</Title>
       <Description>
         Wayne Foundation leads with 102% growth on just $37M in R&D investment,

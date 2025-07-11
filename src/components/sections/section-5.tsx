@@ -5,8 +5,8 @@ import Description from "../description";
 
 const Section5 = () => {
   return (
-    <div className="md:col-span-2 space-y-2">
-      <Title className="text-3xl">
+    <div className="md:col-span-2 ">
+      <Title className="text-2xl">
         Wayne Enterprises Dominate Global Manufacturing
       </Title>
       <Description>
@@ -17,7 +17,7 @@ const Section5 = () => {
         capacity across aerospace, biotech, electronics, and applied sciences
         divisions.
       </Description>
-      <ProductionChart/>
+      <ProductionChart />
     </div>
   );
 };

@@ -113,7 +113,7 @@ export default function HRMetricsChart() {
             </SelectContent>
           </Select>
         </div>
-        <div className="flex gap-2 mt-2">
+        <div className="flex gap-2 mt-2 items-center justify-center">
           {(["retention_rate", "satisfaction_score"] as const).map((key) => {
             const average = filteredData.length
               ? total[key] / filteredData.length
@@ -127,7 +127,7 @@ export default function HRMetricsChart() {
                 onClick={() => setActiveChart(key)}
                 className={cn(
                   activeChart === key
-                    ? "bg-primary text-primary-foreground"
+                    ? "bg-primary text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground"
                     : ""
                 )}
               >
@@ -146,11 +146,7 @@ export default function HRMetricsChart() {
         <ChartContainer config={chartConfig} className="w-full h-64">
           <BarChart accessibilityLayer data={filteredData}>
             <CartesianGrid vertical={false} />
-            <XAxis
-              dataKey="employee_level"
-              
-              tickMargin={2}
-            />
+            <XAxis dataKey="employee_level" tickMargin={2} />
             <YAxis
               tickLine={true}
               axisLine={false}

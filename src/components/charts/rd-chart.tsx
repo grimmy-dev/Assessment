@@ -8,7 +8,6 @@ import {
   BarChart,
   Bar,
   XAxis,
-  YAxis,
   CartesianGrid,
 } from "recharts";
 import {

@@ -5,7 +5,7 @@ import Title from "../title";
 
 const Section1 = () => {
   return (
-    <div className="md:col-span-3 md:row-span-2 space-y-2">
+    <div className="md:col-span-3 md:row-span-2">
       <Title>
         Wayne Tech Cuts Gotham Crime by
         <span className="text-6xl font-extrabold ml-2">40%</span>
@@ -15,28 +15,28 @@ const Section1 = () => {
         six districts delivers unprecedented crime reduction. Bristol District
         leads the transformation with a 45% incident decrease over the past 12
         months, marking the most significant public safety improvement in
-        Gotham's modern history.
+        Gotham&apos;s modern history.
       </Description>
       <Description>
         The comprehensive security initiative, launched in early 2023,
         represents a $47 million investment in cutting-edge surveillance
         technology, predictive analytics, and rapid response systems. Wayne
-        Enterprises' Public Safety Division worked closely with Gotham City
+        Enterprises&apos; Public Safety Division worked closely with Gotham City
         Police Department to identify optimal deployment locations, focusing on
         high-crime corridors and vulnerable community areas.
       </Description>
       <Description>
-        Bristol District's remarkable transformation serves as a model for urban
-        security innovation. The area, once plagued by frequent incidents, now
-        boasts a 45% reduction in criminal activity. Park Row follows closely
-        with 38% improvement, while even the historically challenging Narrows
-        district shows measurable progress at 15% reduction.
+        Bristol District&apos;s remarkable transformation serves as a model for
+        urban security innovation. The area, once plagued by frequent incidents,
+        now boasts a 45% reduction in criminal activity. Park Row follows
+        closely with 38% improvement, while even the historically challenging
+        Narrows district shows measurable progress at 15% reduction.
       </Description>
 
       <SecurityChart />
 
       <Description>
-        The technology's impact extends beyond crime statistics. Average
+        The technology&apos;s impact extends beyond crime statistics. Average
         emergency response times have decreased by 4.2 minutes across all
         districts, potentially saving lives during critical incidents. The
         integrated system combines real-time monitoring, automated threat

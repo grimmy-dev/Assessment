@@ -1,15 +1,17 @@
-import { cn } from '@/lib/utils'
-import React, { ReactNode } from 'react'
+import { cn } from "@/lib/utils";
+import React, { ReactNode } from "react";
 
-interface DescProps{
-  children:ReactNode,
-  className?:string
+interface DescProps {
+  children: ReactNode;
+  className?: string;
 }
 
-const Description = ({children,className}:DescProps) => {
+const Description = ({ children, className }: DescProps) => {
   return (
-    <p className={cn("leading-relaxed",className)}>{children}</p>
-  )
-}
+    <p className={cn("leading-7 [&:not(:first-child)]:mt-4", className)}>
+      {children}
+    </p>
+  );
+};
 
-export default Description
+export default Description;
