@@ -13,6 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Update paths for Vercel deployment
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECURITY_PATH = BASE_DIR / "data/wayne_security_data.csv"
 HR_PATH = BASE_DIR / "data/wayne_hr_analytics.csv"
